@@ -1,5 +1,5 @@
-option('cactlib', type: 'string', value: '../CactLibc-x86_32',
+option('cactlib', type: 'string', value: '../CactLibc-x86_64',
   description: 'CactLibc project root, relative to this repo or absolute')
 
-option('lr_sbin', type: 'string', value: '../LocalRepoCactOS-x86_32/lib/sbin',
+option('lr_sbin', type: 'string', value: '../LocalRepoCactOS-x86_64/lib/sbin',
   description: 'staging /sbin directory used by the stage target, relative or absolute')

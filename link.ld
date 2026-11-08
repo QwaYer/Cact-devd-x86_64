@@ -11,6 +11,8 @@ SECTIONS {
     .gnu.hash  : { *(.gnu.hash) }
     .dynsym    : { *(.dynsym) }
     .dynstr    : { *(.dynstr) }
+    .rela.dyn  : { *(.rela.dyn) }
+    .rela.plt  : { *(.rela.plt) }
     .rel.dyn   : { *(.rel.dyn) }
     .rel.plt   : { *(.rel.plt) }
 
@@ -23,6 +25,7 @@ SECTIONS {
     .eh_frame  : { *(.eh_frame) }
 
     . = ALIGN(0x1000);
+    .data.rel.ro : { *(.data.rel.ro .data.rel.ro.*) }
     .data      : { *(.data .data.*) }
     .got       : { *(.got) }
     .got.plt   : { *(.got.plt) }
